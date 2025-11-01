@@ -89,7 +89,7 @@ docker build -t titanic-r -f Dockerfile_R .
 ```bash
 docker run --rm -it -v "%cd%/data:/app/data" titanic-r
 ```
-
+Note: This command might not work for Non-Windows systems. For macOS / Linux, replace %cd% with $(pwd).
 ### Output
 The R container will:
 - Load and clean the Titanic dataset
