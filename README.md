@@ -15,6 +15,7 @@ titanic-disaster/
 │   │   └── main.py
 │   └── r/                 # R implementation
 │       └── main.R
+│       └── install_packages.R  # R dependencies
 │
 ├── Dockerfile             # Python container configuration
 ├── Dockerfile_R           # R container configuration
