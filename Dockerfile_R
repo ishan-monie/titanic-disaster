@@ -1,0 +1,11 @@
+FROM rocker/tidyverse:4.3.1
+
+WORKDIR /app/src/r
+
+COPY src/r/install_packages.R .
+RUN Rscript install_packages.R
+
+COPY src/r/ ./ 
+COPY data/ ../../data/
+
+CMD ["Rscript", "main.R"]
